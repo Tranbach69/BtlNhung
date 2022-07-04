@@ -10,14 +10,14 @@ btnCreate.onclick = function () {
     let password = getPassword()
     let phone1 = phone.value
     let userName1 = userName.value
-    const data ={
+    const data = {
         email,
         password,
         phone1,
         userName1
     }
-    axios.post('https://bach-tran.herokuapp.com/api/Use',data)
-    .then(rs => console.log(rs))
+    axios.post('https://bach--tran.herokuapp.com/api/User', data)
+        .then(rs => console.log(rs))
 
 
 }
